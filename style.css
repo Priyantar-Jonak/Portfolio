@@ -1,0 +1,112 @@
+@font-face {
+    font-family: slant;
+    src: url(./PlaywriteINThin.ttf);
+}
+
+@font-face {
+    font-family: jun;
+    src: url(./DMMonoRegular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.loader {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color : #0B0B0B;
+    padding: 25vh 10vw;
+}
+
+.line {
+    height: 15vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2vw;
+}
+
+#line-1 h5 {
+    width: 5vw;
+    text-align: right;
+}
+
+#line-1 {
+    font-family: slant;
+    padding-left: 5vw;
+    font-size: 2vw;
+}
+
+.line h1 {
+    font-family: jun;
+    font-size: 6.25vw;
+    font-weight: 500;
+}
+
+.line h2 {
+    text-transform: uppercase;
+    font-family: jun;
+    font-size: 4vw;
+    font-weight: 500;
+    animation-name: now;
+    animation-delay: 2s;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes now {
+    0% {
+        font-family: jun;
+        font-size: 4vw;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;
+    }
+    49% {
+        font-family: jun;
+        font-size: 4vw;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+    }
+    50% {
+        font-family: slant;
+        font-size: 3.5vw;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 0;
+    }
+    100% {
+        font-family: slant;
+        font-size: 3.5vw;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+    }
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #0B0B0B;
+}
+
+#page-1 {
+    height: 100%;
+    width: 100%;
+    background-color: #191819;
+}
